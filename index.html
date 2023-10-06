@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Search city" spellcheck="false"/>
-            <button><img src="images/search.png"></button>
-        </div>
-        <div class="weather">
-            <img src="images/rain.png" class="weather-icon">
-            <h1 class="temperature">32°C</h1>
-            <h2 class="city">Greater Noida</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="images/humidity.png" class="weather-icon">
-                    <div>
-                        <p class="humidity">37%</p>
-                        <p>Humidity</p>
-                    </div> 
-                </div>
-                <div class="col">
-                    <img src="images/wind.png" class="weather-icon">
-                    <div>
-                        <p class="wind">6 km/h</p>
-                        <p>Wind Speed</p>
-                    </div> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main">
+        <video autoplay loop muted src="images/background.mp4"></video>
+        <div class="card">
+            <div class="search">
+                <input
+                    type="text"
+                    placeholder="Search city"
+                    spellcheck="false"
+                />
+                <button><img src="images/search.png" /></button>
+            </div>
+            <div class="error">
+                <p>City not found! Please enter a valid city name</p>
+            </div>
+            <div class="weather">
+                <img src="images/clear.png" class="weather-icon" />
+                <h1 class="temperature">32°C</h1>
+                <h2 class="city">Greater Noida</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png" />
+                        <div>
+                            <p class="humidity">37%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png" />
+                        <div>
+                            <p class="wind">6 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-    
-    <script src="script.js"></script>"
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
