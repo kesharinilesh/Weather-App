@@ -46,3 +46,4 @@ async function checkWeather(city) {
 searchButton.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
 })
+// add autocomplete search
